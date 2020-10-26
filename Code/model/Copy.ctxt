@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=Copy
+comment1.params=serialNumber\ purchaseDate\ price\ available\ originalLP
+comment1.target=Copy(java.lang.String,\ java.lang.String,\ java.lang.String,\ boolean,\ LP)
+numComments=2
