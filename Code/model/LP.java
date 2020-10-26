@@ -3,11 +3,11 @@ package model;
 
 public class LP
 {
-    String barcode;
-    String title;
-    String artist;
-    String publicationDate;
-    String description;
+    private String barcode;
+    private String title;
+    private String artist;
+    private String publicationDate;
+    private String description;
     
     public LP(String barcode, String title, String artist, String publicationDate, String description)
     {

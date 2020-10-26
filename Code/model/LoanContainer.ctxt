@@ -2,4 +2,6 @@
 comment0.target=LoanContainer
 comment1.params=
 comment1.target=LoanContainer()
-numComments=2
+comment2.params=
+comment2.target=LoanContainer\ getInstance()
+numComments=3

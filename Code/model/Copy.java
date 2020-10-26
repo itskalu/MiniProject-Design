@@ -4,11 +4,11 @@ package model;
 
 public class Copy
 {
-    String serialNumber;
-    String purchaseDate;
-    String price;
-    boolean available;
-    LP originalLP;
+    private String serialNumber;
+    private String purchaseDate;
+    private String price;
+    private boolean available;
+    private LP originalLP;
     
    
     public Copy(String serialNumber, String purchaseDate, String price, boolean available, LP originalLP)

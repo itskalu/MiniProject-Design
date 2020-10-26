@@ -4,10 +4,10 @@ package model;
 
 public class Loan
 {
-    String id;
-    String returnDate;
-    String borrowDate;
-    Copy loanCopy;
+    private String id;
+    private String returnDate;
+    private String borrowDate;
+    private Copy loanCopy;
     
     public Loan(String id, String returnDate, String borrowDate, Copy loanCopy)
     {
