@@ -2,6 +2,8 @@ package tui;
 
 import controller.*;
 import testin.*;
+import model.*;
+
 import java.util.*;
 
 
@@ -28,7 +30,7 @@ public class MainMenuUI
             
             switch(input){
                 case "1": 
-                    lendLPCtr.Lend();
+                    LendLPDialog();
                     isChoosing = false;
                     break;
                 case "2": 
@@ -54,6 +56,30 @@ public class MainMenuUI
                     System.out.println("Please use numbers to select actions");
             }
             
-        }while(isChoosing);
+        }while(isChoosing);        
+    }
+    
+    public void LendLPDialog(){
+        LendLPCtr lendLPCtr = new LendLPCtr();
+        System.out.println("######## LEND LP ########");
+        System.out.println("Enter name or phone number: ");
+        boolean borrowerFound = false;
+        while(!borrowerFound){  
+            String input = src.nextLine();
+            Borrower b = lendLPCtr.FindBorrowerByName(input);
+            if(!b.getName().toLowerCase().equals(input.toLowerCase())){
+                System.out.println("Entered name was not found, please try again");
+            }else{
+                borrowerFound = true;
+            }        
+        }
+        
+        System.out.println("Enter title of LP: ");
+        boolean LPFound = false;
+        while(!LPFound){
+            String input = src.nextLine();
+            
+        }
+        
     }
 }

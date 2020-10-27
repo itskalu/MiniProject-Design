@@ -20,7 +20,8 @@ public class BorrowerContainer
     
     Borrower borrower = null;
     
-    public boolean findBorrowerByName(String borrowerName){
+    public Borrower findBorrowerByName(String borrowerName){
+        Borrower foundBorrower = null;
         boolean found = false;
         for(Borrower b : borrowers){
             if(b.getName().toLowerCase().equals(borrowerName.toLowerCase())){
@@ -28,7 +29,7 @@ public class BorrowerContainer
                 borrower = b;
             } 
         }
-        return found;
+        return borrower;
     }
     
     public boolean findBorrowerByPhoneNumber(int phoneNumber){

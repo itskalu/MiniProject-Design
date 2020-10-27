@@ -1,5 +1,5 @@
 #BlueJ class context
-comment0.target=LendLPCtr
-comment1.params=borrowerName
+comment0.target=BorrowerCtr
+comment1.params=name
 comment1.target=model.Borrower\ FindBorrowerByName(java.lang.String)
 numComments=2

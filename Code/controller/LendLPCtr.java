@@ -1,16 +1,30 @@
 package controller;
 
 import java.util.*;
+import java.util.Date; 
+
 import model.*;
+import tui.*;
 
 public class LendLPCtr
 {
     BorrowerContainer borrowerContainer = BorrowerContainer.getInstance();
     CopyContainer copyContainer = CopyContainer.getInstance();
     
-    Scanner src = new Scanner(System.in);
+    BorrowerCtr borrowerCtr = new BorrowerCtr();   
+    LPCtr lpCtr = new LPCtr();
     
-    public void Lend(){
+    public Borrower FindBorrowerByName(String borrowerName){
+        Borrower b = borrowerCtr.FindBorrowerByName(borrowerName);
+        return b;
+    }
+    
+    public LP FindLP(String title){
+        LP lp = lpCtr.FindLP(title);
+        return lp;
+    }
+    
+    /*public void Lend(){
         boolean borrowerFound = false;
         Borrower borrower = null; 
         LP lp = null;
@@ -44,8 +58,8 @@ public class LendLPCtr
             }    
         }
         
-        boolean lpFound = false;
-        
+        // ENTER TITLE OF LP
+        boolean lpFound = false;        
         System.out.println("Enter title of LP: ");
         while(!lpFound){
             String lpTitle = src.nextLine();
@@ -58,15 +72,26 @@ public class LendLPCtr
             }
         }
         
-        System.out.println(borrower.getName());
-        System.out.println(lp.getTitle());
-        System.out.println(copyContainer.getNumOfCopies(lp));
         
+        System.out.println("Borrower name: "+borrower.getName().toUpperCase());
+        System.out.println("Borrower's phone number: "+borrower.getPhoneNum());
+        System.out.println("\nLP Title: "+lp.getTitle());
+        System.out.println("LP Artist: "+lp.getArtist());
+        System.out.println("Number of copies: "+copyContainer.getNumOfCopies(lp));
+        System.out.println("\nDo you want to confirm loan? (yes/no)");
+        String inputConfirmLoan = src.nextLine();
         
+        if(inputConfirmLoan.equals("yes")){
+            Loan loan = new Loan("1", "30-10-2020", java.time.LocalDate.now().toString(), copyContainer.getCopy(lp));
+            
+            System.out.println(loan.getLoanCopyLPArtist()+" "+loan.getID() );
+        }
         
-        
+        MainMenuUI mainMenuUI = new MainMenuUI();
+        mainMenuUI.Start();
+        */
         
         
     }
     
-}
+

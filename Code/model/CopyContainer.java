@@ -23,6 +23,7 @@ public class CopyContainer
     public boolean FindLPByTitle(String inputTitle){
         boolean found = false;
         for(Copy c : copies){
+            Copy copy = c;
             LP lp = c.getOriginalLP();
             if(lp.getTitle().toLowerCase().equals(inputTitle.toLowerCase())){
                 found = true;
@@ -41,6 +42,16 @@ public class CopyContainer
         }
         
         return numOfCopies;
+    }
+    
+    public Copy getCopy(LP lp){
+        Copy copy = null;
+        for(Copy c : copies){
+            if(c.getOriginalLP().equals(lp)){
+                copy=c;
+            }
+        }
+        return copy;
     }
     
     public LP getLP(){

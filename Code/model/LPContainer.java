@@ -19,9 +19,14 @@ public class LPContainer
         return LPs.size();
     }
     
-    public boolean findLPByTitle(String lpTitle){
-        boolean found = false;
-        return found;
+    public LP FindLPByTitle(String lpTitle){
+        LP foundLp = null;
+        for(LP lp : LPs){
+            if(lp.getTitle().toLowerCase().equals(lpTitle.toLowerCase())){
+                foundLp = lp;
+            }
+        }
+        return foundLp;
     }
     
     public static LPContainer getInstance(){

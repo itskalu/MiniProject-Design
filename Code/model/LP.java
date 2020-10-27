@@ -23,4 +23,8 @@ public class LP
         return title;
     }
    
+    public String getArtist(){
+        return artist;
+    }
+    
 }

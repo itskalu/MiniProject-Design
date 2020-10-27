@@ -18,5 +18,10 @@ public class Loan
        
     }
 
-   
+    public String getID(){
+        return id;
+    }
+    public String getLoanCopyLPArtist(){
+        return loanCopy.getOriginalLP().getArtist();
+    }
 }
