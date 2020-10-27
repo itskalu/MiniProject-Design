@@ -2,4 +2,6 @@
 comment0.target=Copy
 comment1.params=serialNumber\ purchaseDate\ price\ available\ originalLP
 comment1.target=Copy(java.lang.String,\ java.lang.String,\ java.lang.String,\ boolean,\ LP)
-numComments=2
+comment2.params=
+comment2.target=LP\ getOriginalLP()
+numComments=3

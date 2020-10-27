@@ -1,13 +1,15 @@
 #BlueJ class context
 comment0.target=BorrowerContainer
 comment1.params=b
-comment1.target=void\ addLender(Borrower)
+comment1.target=void\ addBorrower(Borrower)
 comment2.params=
 comment2.target=int\ getSize()
 comment3.params=borrowerName
-comment3.target=boolean\ findLenderByName(java.lang.String)
+comment3.target=boolean\ findBorrowerByName(java.lang.String)
 comment4.params=phoneNumber
-comment4.target=boolean\ findBorrowerByPhoneNumber(java.lang.String)
+comment4.target=boolean\ findBorrowerByPhoneNumber(int)
 comment5.params=
-comment5.target=BorrowerContainer\ getInstance()
-numComments=6
+comment5.target=Borrower\ getBorrower()
+comment6.params=
+comment6.target=BorrowerContainer\ getInstance()
+numComments=7

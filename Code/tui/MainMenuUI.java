@@ -8,18 +8,18 @@ import java.util.*;
 public class MainMenuUI
 {
     Scanner src = new Scanner(System.in); 
-    LendController lendLP = new LendController();
+    LendLPCtr lendLPCtr = new LendLPCtr();
     TryMe tryMe = new TryMe();
     
-    void Start(){ 
+    public void Start(){ 
         boolean isChoosing=true;
         
         System.out.println("####### Main menu ######");
         System.out.println("[1] - Lend LP");
         System.out.println("[2] - Add LP");
-        System.out.println("[3] - Manage Lender");
+        System.out.println("[3] - Update LP");
         System.out.println("[4] - Return LP");
-        System.out.println("[5] - Update LP");
+        System.out.println("[5] - Manage Borrower");
         System.out.println("[9] - Generate testdata");
         System.out.println("[0] - Exit");
         
@@ -28,7 +28,7 @@ public class MainMenuUI
             
             switch(input){
                 case "1": 
-                    lendLP.Lend();
+                    lendLPCtr.Lend();
                     isChoosing = false;
                     break;
                 case "2": 

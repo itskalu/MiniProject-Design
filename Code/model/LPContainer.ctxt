@@ -2,6 +2,12 @@
 comment0.target=LPContainer
 comment1.params=
 comment1.target=LPContainer()
-comment2.params=
-comment2.target=LPContainer\ getInstance()
-numComments=3
+comment2.params=lp
+comment2.target=void\ addLPToList(LP)
+comment3.params=
+comment3.target=int\ getSize()
+comment4.params=lpTitle
+comment4.target=boolean\ findLPByTitle(java.lang.String)
+comment5.params=
+comment5.target=LPContainer\ getInstance()
+numComments=6

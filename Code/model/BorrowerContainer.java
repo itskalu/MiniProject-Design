@@ -18,22 +18,32 @@ public class BorrowerContainer
         return borrowers.size();
     }
     
-    public boolean findLenderByName(String borrowerName){
+    Borrower borrower = null;
+    
+    public boolean findBorrowerByName(String borrowerName){
         boolean found = false;
         for(Borrower b : borrowers){
             if(b.getName().toLowerCase().equals(borrowerName.toLowerCase())){
                 found = true;
+                borrower = b;
             } 
         }
         return found;
     }
     
-    public boolean findBorrowerByPhoneNumber(String phoneNumber){
+    public boolean findBorrowerByPhoneNumber(int phoneNumber){
         boolean found = false;
         for(Borrower b : borrowers){
-            //if(b.getPhoneNum.equals())
+            if(b.getPhoneNum()==phoneNumber){
+               found=true;
+               borrower = b;
+            }
         }
         return found;
+    }
+    
+    public Borrower getBorrower(){
+        return borrower;
     }
     
     public static BorrowerContainer getInstance(){

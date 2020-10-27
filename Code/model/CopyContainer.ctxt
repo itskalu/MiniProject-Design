@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=CopyContainer
+comment1.params=c
+comment1.target=void\ addCopy(Copy)
+comment2.params=
+comment2.target=int\ getSize()
+comment3.params=inputTitle
+comment3.target=boolean\ FindLPByTitle(java.lang.String)
+comment4.params=lp
+comment4.target=int\ getNumOfCopies(LP)
+comment5.params=
+comment5.target=LP\ getLP()
+comment6.params=
+comment6.target=CopyContainer\ getInstance()
+numComments=7

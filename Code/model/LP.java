@@ -19,5 +19,8 @@ public class LP
        
     }
 
+    public String getTitle(){
+        return title;
+    }
    
 }

@@ -19,8 +19,10 @@ public class Copy
         this.available = available;
         this.originalLP = originalLP;
         
+    } 
+    
+    public LP getOriginalLP(){
+        return originalLP;
     }
-
-    
-    
+      
 }

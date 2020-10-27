@@ -2,4 +2,6 @@
 comment0.target=LP
 comment1.params=barcode\ title\ artist\ publicationDate\ description
 comment1.target=LP(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
-numComments=2
+comment2.params=
+comment2.target=java.lang.String\ getTitle()
+numComments=3

@@ -11,9 +11,16 @@ public class LPContainer
     private LPContainer(){
     }
     
+    public void addLPToList(LP lp){
+        LPs.add(lp);
+    }
+    
+    public int getSize(){
+        return LPs.size();
+    }
+    
     public boolean findLPByTitle(String lpTitle){
         boolean found = false;
-        
         return found;
     }
     
