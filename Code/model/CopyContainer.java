@@ -41,12 +41,16 @@ public class CopyContainer
         return numOfCopies;
     }
     
-    /*public Copy getAvailableCopies(){
+    public ArrayList getAllAvailableCopies(){
+        ArrayList<Copy> availableCopiesArr = new ArrayList<>();
+
         for(Copy c : copies){
-           
+           if(c.getAvailability()){
+               availableCopiesArr.add(c);
+           }
         }
-    }*/
-    
+        return availableCopiesArr;
+    }
     
     
     public static CopyContainer getInstance(){

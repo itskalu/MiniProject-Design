@@ -95,10 +95,10 @@ public class MainMenuUI
         LP lp = copy.getOriginalLP();
         System.out.println("LP Title: "+lp.getTitle());
         System.out.println("Number of available copies: "+CopyContainer.getInstance().getNumOfCopies(lp));
-        System.out.println("Available Copies: "+copy.getSerialNum());
+        System.out.println("Available Copies: ");
         
         
-        
+         
         
     }
 }
