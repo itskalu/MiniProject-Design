@@ -10,8 +10,10 @@ import java.util.*;
 public class MainMenuUI
 {
     Scanner src = new Scanner(System.in); 
-    LendLPCtr lendLPCtr = new LendLPCtr();
     TryMe tryMe = new TryMe();
+    
+    LendLPCtr lendLPCtr = new LendLPCtr();
+
     
     public void Start(){ 
         boolean isChoosing=true;
@@ -59,27 +61,44 @@ public class MainMenuUI
         }while(isChoosing);        
     }
     
-    public void LendLPDialog(){
+    private void LendLPDialog(){
+        Borrower b = null;
+        Copy copy = null;
+        
         LendLPCtr lendLPCtr = new LendLPCtr();
         System.out.println("######## LEND LP ########");
         System.out.println("Enter name or phone number: ");
         boolean borrowerFound = false;
         while(!borrowerFound){  
             String input = src.nextLine();
-            Borrower b = lendLPCtr.FindBorrowerByName(input);
-            if(!b.getName().toLowerCase().equals(input.toLowerCase())){
-                System.out.println("Entered name was not found, please try again");
-            }else{
+            b = lendLPCtr.FindBorrowerByName(input);
+            if(b!=null){
                 borrowerFound = true;
+            }else{
+                System.out.println("Entered name was not found, please try again");
             }        
         }
         
         System.out.println("Enter title of LP: ");
-        boolean LPFound = false;
-        while(!LPFound){
+        boolean copyFound = false;
+        while(!copyFound){
             String input = src.nextLine();
-            
+            copy = lendLPCtr.FindLPCopy(input);
+            if(copy!=null){
+                copyFound = true;
+            }else{
+                System.out.println("Entered LP title was not found, please try again");         
+            }
         }
+        
+        System.out.println("Borrower: "+b.getName());
+        LP lp = copy.getOriginalLP();
+        System.out.println("LP Title: "+lp.getTitle());
+        System.out.println("Number of available copies: "+CopyContainer.getInstance().getNumOfCopies(lp));
+        System.out.println("Available Copies: "+copy.getSerialNum());
+        
+        
+        
         
     }
 }

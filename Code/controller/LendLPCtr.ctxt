@@ -2,4 +2,6 @@
 comment0.target=LendLPCtr
 comment1.params=borrowerName
 comment1.target=model.Borrower\ FindBorrowerByName(java.lang.String)
-numComments=2
+comment2.params=lpTitle
+comment2.target=model.Copy\ FindLPCopy(java.lang.String)
+numComments=3

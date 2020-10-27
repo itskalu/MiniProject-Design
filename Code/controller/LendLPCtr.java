@@ -12,16 +12,16 @@ public class LendLPCtr
     CopyContainer copyContainer = CopyContainer.getInstance();
     
     BorrowerCtr borrowerCtr = new BorrowerCtr();   
-    LPCtr lpCtr = new LPCtr();
+    CopyCtr copyCtr = new CopyCtr();
     
     public Borrower FindBorrowerByName(String borrowerName){
         Borrower b = borrowerCtr.FindBorrowerByName(borrowerName);
         return b;
     }
     
-    public LP FindLP(String title){
-        LP lp = lpCtr.FindLP(title);
-        return lp;
+    public Copy FindLPCopy(String lpTitle){
+        Copy c = copyCtr.FindLPCopy(lpTitle);
+        return c;
     }
     
     /*public void Lend(){

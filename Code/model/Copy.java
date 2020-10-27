@@ -1,3 +1,4 @@
+
 package model;
 
 
@@ -25,4 +26,11 @@ public class Copy
         return originalLP;
     }
       
+    public String getSerialNum(){
+        return serialNumber;
+    }
+    
+    public boolean getAvailability(){
+        return available;
+    }
 }

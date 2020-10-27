@@ -18,19 +18,16 @@ public class CopyContainer
         return copies.size();
     }
     
-    LP originalLP = null;
+    Copy lpCopy = null;
     
-    public boolean FindLPByTitle(String inputTitle){
-        boolean found = false;
+    public Copy FindCopyByLPTitle(String lpTitle){
         for(Copy c : copies){
-            Copy copy = c;
             LP lp = c.getOriginalLP();
-            if(lp.getTitle().toLowerCase().equals(inputTitle.toLowerCase())){
-                found = true;
-                originalLP = lp;
+            if(lp.getTitle().toLowerCase().equals(lpTitle.toLowerCase())){
+                lpCopy = c;
             }
         }
-        return found;
+        return lpCopy;
     }
     
      public int getNumOfCopies(LP lp){
@@ -44,19 +41,13 @@ public class CopyContainer
         return numOfCopies;
     }
     
-    public Copy getCopy(LP lp){
-        Copy copy = null;
+    /*public Copy getAvailableCopies(){
         for(Copy c : copies){
-            if(c.getOriginalLP().equals(lp)){
-                copy=c;
-            }
+           
         }
-        return copy;
-    }
+    }*/
     
-    public LP getLP(){
-        return originalLP;
-    }
+    
     
     public static CopyContainer getInstance(){
         return instance;

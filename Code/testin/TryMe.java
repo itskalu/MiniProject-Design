@@ -24,12 +24,14 @@ public class TryMe
        LP lp2 = new LP("5456415", "LPTitle2", "LPArtist2", "1990", "LPDescription2");
        LP lp3 = new LP("1234134", "LPTitle3", "LPArtist3", "1995", "LPDescription3");
        LP lp4 = new LP("8798944", "LPTitle4", "LPArtist4", "2005", "LPDescription4");
+       
+       
       
        //creating copies of LPs
        Copy lp1Copy1 = new Copy("15", "26-10-2020", "300", true, lp1);
        Copy lp1Copy2 = new Copy("7", "25-9-2020", "300", true, lp1);
-       Copy lp1Copy3 = new Copy("7", "24-4-2020", "300", true, lp1);
-       Copy lp1Copy4 = new Copy("7", "21-5-2020", "300", true, lp1);
+       Copy lp1Copy3 = new Copy("2", "24-4-2020", "300", true, lp1);
+       Copy lp1Copy4 = new Copy("6", "21-5-2020", "300", true, lp1);
        Copy lp2Copy1 = new Copy("22", "20-9-2020", "150", true, lp2);
        Copy lp2Copy2 = new Copy("23", "21-9-2020", "150", true, lp2);
        
