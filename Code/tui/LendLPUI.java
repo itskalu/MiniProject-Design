@@ -66,7 +66,7 @@ public class LendLPUI
         
         System.out.println("\n######## COPY INFORMATIONS ##########");
         System.out.println("Copy Serial number: "+copy.getSerialNum());
-        System.out.println("Copy Price "+copy.getPrice());
+        System.out.println("Copy Price: "+copy.getPrice());
         
         //Registering loan
         boolean isDone=false;
@@ -76,7 +76,7 @@ public class LendLPUI
             if(inputConfirm.equals("yes")){
                 Random rndm = new Random();
                 int randomID = rndm.nextInt(100);
-                System.out.println("Enter approximate return date: ");
+                System.out.println("Enter approximate return date(dd/MM/yyyy): ");
                 String returnDate = src.nextLine();
                 Loan registeredLoan = lendLPCtr.registerLoan(randomID, returnDate);
                 
@@ -90,8 +90,8 @@ public class LendLPUI
                     isDone = true;
                     System.out.println("Bye then.");
                     mainMenuUI.Start();
-                }else if(inputStorno.equals("no")){        
-                    }
+                }else if(inputStorno.equals("no")){                 
+                }
             }
         }      
     }

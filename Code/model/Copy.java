@@ -1,18 +1,15 @@
-
 package model;
-
-
 
 public class Copy
 {
     private String serialNumber;
     private String purchaseDate;
-    private String price;
+    private int price;
     private boolean available;
     private LP originalLP;
     
    
-    public Copy(String serialNumber, String purchaseDate, String price, boolean available, LP originalLP)
+    public Copy(String serialNumber, String purchaseDate, int price, boolean available, LP originalLP)
     {
         this.serialNumber = serialNumber;
         this.purchaseDate = purchaseDate;
@@ -22,11 +19,6 @@ public class Copy
         
     } 
     
-    public void printAllInfo(){
-        System.out.println(serialNumber+", "+purchaseDate+", "+
-                            "\n"+price +", "+available);
-    }
-
     public LP getOriginalLP(){
         return originalLP;
     }
@@ -35,7 +27,7 @@ public class Copy
         return serialNumber;
     }
     
-    public String getPrice(){
+    public int getPrice(){
         return price;
     }
     

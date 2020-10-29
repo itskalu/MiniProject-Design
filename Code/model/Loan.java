@@ -1,8 +1,5 @@
 package model;
 
-import java.text.SimpleDateFormat;  
-import java.util.*;
-
 public class Loan
 {
     private int id;

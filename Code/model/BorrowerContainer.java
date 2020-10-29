@@ -20,11 +20,9 @@ public class BorrowerContainer
 
     
     public Borrower findBorrowerByName(String borrowerName){
-       // boolean found = false;
        Borrower borrower = null;
         for(Borrower b : borrowers){
             if(b.getName().toLowerCase().equals(borrowerName.toLowerCase())){
-                //found = true;
                 borrower = b;
             } 
         }

@@ -14,7 +14,7 @@ public class AddLPCtr
         return lp;
    }
 
-   public Copy addCopy(String serialNum, String purchaseDate, String price){
+   public Copy addCopy(String serialNum, String purchaseDate, int price){
         Copy c = new Copy(serialNum, purchaseDate, price, true, lp);
         CopyContainer.getInstance().addCopy(c);
         return c;

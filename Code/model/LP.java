@@ -1,6 +1,5 @@
 package model;
 
-
 public class LP
 {   
     private String title;

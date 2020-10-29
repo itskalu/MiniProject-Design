@@ -9,7 +9,6 @@ public class CopyContainer
     
     private static CopyContainer instance = new CopyContainer();
     
-    
     public void addCopy(Copy c){
         copies.add(c);
     }
@@ -40,7 +39,6 @@ public class CopyContainer
         }
         return availableCopies;
     }  
-    
     
     public static CopyContainer getInstance(){
         return instance;

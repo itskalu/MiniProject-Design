@@ -33,12 +33,12 @@ public class TryMe
        
       
        //creating copies of LPs
-       Copy lp1Copy1 = new Copy("15", "26-10-2020", "300", true, lp1);
-       Copy lp1Copy2 = new Copy("7", "25-9-2020", "300", false, lp1);
-       Copy lp1Copy3 = new Copy("2", "24-4-2020", "300", false, lp1);
-       Copy lp1Copy4 = new Copy("6", "21-5-2020", "300", true, lp1);
-       Copy lp2Copy1 = new Copy("22", "20-9-2020", "150", false, lp2);
-       Copy lp2Copy2 = new Copy("23", "21-9-2020", "150", false, lp2);
+       Copy lp1Copy1 = new Copy("15", "26/10/2020", 300, true, lp1);
+       Copy lp1Copy2 = new Copy("7", "25/9/2020", 300, false, lp1);
+       Copy lp1Copy3 = new Copy("2", "24/4/2020", 300, false, lp1);
+       Copy lp1Copy4 = new Copy("6", "21/5/2020", 300, true, lp1);
+       Copy lp2Copy1 = new Copy("22", "20/9/2020", 150, false, lp2);
+       Copy lp2Copy2 = new Copy("23", "21/9/2020", 150, false, lp2);
        
        //Assigning copies into an arrayList of copies
        CopyContainer.getInstance().addCopy(lp1Copy1);

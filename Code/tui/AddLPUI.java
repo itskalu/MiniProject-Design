@@ -59,11 +59,10 @@ public class AddLPUI
         }
 
         System.out.println("Enter price: ");
-        String inputPrice = src.nextLine();
+        int inputPrice = src.nextInt();
         newCopy = addLPCtr.addCopy(inputSerialNum, inputPurchaseDate, inputPrice);
 
         System.out.println("LP successfully added!");
-        newCopy.printAllInfo();
         mainMenuUI.Start();
     }
 }

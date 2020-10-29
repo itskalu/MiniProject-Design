@@ -47,6 +47,8 @@ public class MainMenuUI
                     break;
                 case "9": 
                     tryMe.generateTestDate();
+                    System.out.println("Test date generated.");
+                    Start();
                     break;
                 case "0": 
                     System.out.println("Exiting program....");

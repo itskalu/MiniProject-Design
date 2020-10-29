@@ -8,8 +8,7 @@ public class LoanContainer
     
     private static LoanContainer instance = new LoanContainer();
     
-    public LoanContainer()
-    {
+    public LoanContainer(){
     }
     
     public Loan registerLoan(int id, String returnDate, Copy c){
@@ -23,7 +22,6 @@ public class LoanContainer
     public static LoanContainer getInstance(){
         return instance;
     }
-    
     
     
 }
