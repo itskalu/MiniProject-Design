@@ -15,12 +15,13 @@ public class BorrowerCtr
     }
 
     public void createBorrower(String name, int phoneNum, String address, String postCode, String city){
-        Borrower b = new Borrower(name, phoneNum, city, address, postCode);
-        BorrowerContainer.getInstance().addBorrower(b);
+        borrower = new Borrower(name, phoneNum, city, address, postCode);
+        BorrowerContainer.getInstance().addBorrower(borrower);
     }
 
     public void deleteBorrower(Borrower b){       
         BorrowerContainer.getInstance().deleteBorrower(b);
+        borrower = null;
     }
 
     public void updateName(String name){

@@ -66,7 +66,7 @@ public class ManageBorrowerUI
 
         borrowerCtr.createBorrower(inputName, inputPhoneNum, inputAddress, inputPostCode, inputCity);
         System.out.println("New borrower successfuly created!");
-
+        System.out.println(BorrowerContainer.getInstance().getSize());
         manageBorrowersDialog();
     }
 
@@ -113,7 +113,6 @@ public class ManageBorrowerUI
                 }else{
                     System.out.println("Entered name was not found, please try again");
                 }
-                borrowerFound = true;
             }
         }
         printAllInfoAboutBorrower();

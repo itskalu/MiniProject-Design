@@ -18,6 +18,10 @@ public class MainMenuUI
 
     ManageBorrowerUI manageBorrowersUI = new ManageBorrowerUI(); 
 
+    public static void main (String[] args){
+        MainMenuUI obj = new MainMenuUI();
+        obj.Start();
+    }
     
     public void Start(){ 
         boolean isChoosing=true;
