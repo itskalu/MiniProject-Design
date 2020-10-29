@@ -32,6 +32,11 @@ public class LendLPCtr
         b.getLoans().add(l);
         return l;
     }
+
+    public int getLPsSize(){
+        int size = LPContainer.getInstance().getSize();
+        return size;
+    }
 }
     
 

@@ -50,13 +50,12 @@ public class ManageBorrowerUI
 
     }
 
-
     private void createBorrower(){
         System.out.println("##### CREATE NEW BORROWER #####");
         System.out.println("Enter name: ");
         String inputName = src.nextLine();
         System.out.println("Enter phone number: ");
-        int inputPhoneNum = Integer.parseInt(src.nextLine());
+        long inputPhoneNum = Long.parseLong(src.nextLine());
         System.out.println("Enter address: ");
         String inputAddress = src.nextLine();
         System.out.println("Enter city: ");
@@ -80,8 +79,10 @@ public class ManageBorrowerUI
             borrower = borrowerCtr.findBorrowerByName(inputName);
             if(borrower!=null){
                 borrowerFound = true;
+            }else if(inputName.equals("exit")){
+                manageBorrowersDialog();
             }else{
-                System.out.println("Entered name was not found, please try again");
+                System.out.println("Entered name was not found, please try again: ");
             }  
         }
         printAllInfoAboutBorrower();
@@ -117,7 +118,7 @@ public class ManageBorrowerUI
         }
         printAllInfoAboutBorrower();
         System.out.println("[0] Go back");
-        System.out.println("What information do you want to update?");
+        System.out.println("What information do you want to update?(1-3): ");
         boolean isChoosing = true; 
         do{
             String inputChoice = src.nextLine();

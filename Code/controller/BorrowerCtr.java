@@ -14,7 +14,11 @@ public class BorrowerCtr
         return borrower;
     }
 
-    public void createBorrower(String name, int phoneNum, String address, String postCode, String city){
+    public int getBorrowersSize(){
+        int size = BorrowerContainer.getInstance().getSize();
+        return size;
+    }
+    public void createBorrower(String name, long phoneNum, String address, String postCode, String city){
         borrower = new Borrower(name, phoneNum, city, address, postCode);
         BorrowerContainer.getInstance().addBorrower(borrower);
     }

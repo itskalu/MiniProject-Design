@@ -4,13 +4,13 @@ import java.util.*;
 public class Borrower
 {
     private String name;
-    private int phone;
+    private long phone;
     private String city; 
     private String address;
     private String postalCode;
     private ArrayList <Loan> loans;
 
-    public Borrower(String name, int phone, String city, String address, String postalCode)
+    public Borrower(String name, long phone, String city, String address, String postalCode)
     {
         this.name = name;
         this.phone = phone;
@@ -27,10 +27,10 @@ public class Borrower
     public void setName(String name){
         this.name = name;
     }
-    public int getPhoneNum(){
+    public long getPhoneNum(){
         return phone;
     }
-    public void setPhoneNum(int phoneNum){
+    public void setPhoneNum(long phoneNum){
         this.phone = phoneNum;
     }
     public String getFullAddress(){
@@ -42,7 +42,7 @@ public class Borrower
         this.city = city;
         this.postalCode = postalCode;
     }
-  
+
     public ArrayList getLoans(){
         return loans;
     }

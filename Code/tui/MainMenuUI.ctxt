@@ -1,11 +1,5 @@
 #BlueJ class context
 comment0.target=MainMenuUI
-comment1.params=args
-comment1.target=void\ main(java.lang.String[])
-comment2.params=
-comment2.target=void\ Start()
-comment3.params=
-comment3.target=void\ lendLPDialog()
-comment4.params=
-comment4.target=void\ addLPDialog()
-numComments=5
+comment1.params=
+comment1.target=void\ Start()
+numComments=2
