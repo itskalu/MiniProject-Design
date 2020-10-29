@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=ManageBorrowerUI
+comment1.params=
+comment1.target=void\ manageBorrowersDialog()
+comment2.params=
+comment2.target=void\ createBorrower()
+comment3.params=
+comment3.target=void\ deleteBorrower()
+comment4.params=
+comment4.target=void\ updateBorrower()
+comment5.params=
+comment5.target=void\ updateName()
+comment6.params=
+comment6.target=void\ updatePhoneNum()
+comment7.params=
+comment7.target=void\ updateFullAddress()
+comment8.params=
+comment8.target=void\ printAllInfoAboutBorrower()
+numComments=9

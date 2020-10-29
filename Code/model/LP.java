@@ -2,18 +2,18 @@ package model;
 
 
 public class LP
-{
-    private String barcode;
+{   
     private String title;
     private String artist;
+    private String barcode;
     private String publicationDate;
     private String description;
     
-    public LP(String barcode, String title, String artist, String publicationDate, String description)
+    public LP(String title, String artist, String barcode, String publicationDate, String description)
     {
-        this.barcode = barcode;
         this.title = title;
         this.artist = artist;
+        this.barcode = barcode;
         this.publicationDate = publicationDate;
         this.description = description;
        
@@ -25,6 +25,10 @@ public class LP
    
     public String getArtist(){
         return artist;
+    }
+    
+    public String getPublicationDate(){
+        return publicationDate;
     }
     
 }

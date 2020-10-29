@@ -29,28 +29,17 @@ public class CopyContainer
         }
         return lpCopy;
     }
-    
-     public int getNumOfCopies(LP lp){
-        int numOfCopies = 0;
-        for(Copy c : copies){
-            if(c.getOriginalLP()==lp){
-                numOfCopies++;
-            }
-        }
-        
-        return numOfCopies;
-    }
-    
-    public ArrayList getAllAvailableCopies(){
-        ArrayList<Copy> availableCopiesArr = new ArrayList<>();
+
+    public ArrayList getAvailableCopy(){
+        ArrayList<Copy> availableCopies = new ArrayList<>();
 
         for(Copy c : copies){
            if(c.getAvailability()){
-               availableCopiesArr.add(c);
+               availableCopies.add(c);
            }
         }
-        return availableCopiesArr;
-    }
+        return availableCopies;
+    }  
     
     
     public static CopyContainer getInstance(){

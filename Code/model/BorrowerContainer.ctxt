@@ -2,12 +2,12 @@
 comment0.target=BorrowerContainer
 comment1.params=b
 comment1.target=void\ addBorrower(Borrower)
-comment2.params=
-comment2.target=int\ getSize()
+comment2.params=b
+comment2.target=void\ deleteBorrower(Borrower)
 comment3.params=borrowerName
 comment3.target=Borrower\ findBorrowerByName(java.lang.String)
-comment4.params=phoneNumber
-comment4.target=boolean\ findBorrowerByPhoneNumber(int)
+comment4.params=
+comment4.target=int\ getSize()
 comment5.params=
 comment5.target=Borrower\ getBorrower()
 comment6.params=

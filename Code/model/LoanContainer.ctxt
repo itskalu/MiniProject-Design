@@ -2,6 +2,8 @@
 comment0.target=LoanContainer
 comment1.params=
 comment1.target=LoanContainer()
-comment2.params=
-comment2.target=LoanContainer\ getInstance()
-numComments=3
+comment2.params=id\ returnDate\ c
+comment2.target=Loan\ registerLoan(int,\ java.lang.String,\ Copy)
+comment3.params=
+comment3.target=LoanContainer\ getInstance()
+numComments=4

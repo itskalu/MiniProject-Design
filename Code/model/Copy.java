@@ -22,6 +22,11 @@ public class Copy
         
     } 
     
+    public void printAllInfo(){
+        System.out.println(serialNumber+", "+purchaseDate+", "+
+                            "\n"+price +", "+available);
+    }
+
     public LP getOriginalLP(){
         return originalLP;
     }
@@ -30,7 +35,14 @@ public class Copy
         return serialNumber;
     }
     
+    public String getPrice(){
+        return price;
+    }
+    
     public boolean getAvailability(){
         return available;
+    }
+    public void setAvailability(boolean input){
+        available = input;
     }
 }

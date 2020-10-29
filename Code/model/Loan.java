@@ -1,27 +1,22 @@
 package model;
 
-
+import java.text.SimpleDateFormat;  
+import java.util.*;
 
 public class Loan
 {
-    private String id;
+    private int id;
     private String returnDate;
     private String borrowDate;
+    private String agreedDate;
     private Copy loanCopy;
     
-    public Loan(String id, String returnDate, String borrowDate, Copy loanCopy)
+    public Loan(int id, String returnDate, String borrowDate, Copy loanCopy)
     {
        this.id = id;
        this.returnDate = returnDate;
        this.borrowDate = borrowDate;
        this.loanCopy = loanCopy;
        
-    }
-
-    public String getID(){
-        return id;
-    }
-    public String getLoanCopyLPArtist(){
-        return loanCopy.getOriginalLP().getArtist();
     }
 }

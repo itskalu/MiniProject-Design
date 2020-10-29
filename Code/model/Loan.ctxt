@@ -1,9 +1,5 @@
 #BlueJ class context
 comment0.target=Loan
 comment1.params=id\ returnDate\ borrowDate\ loanCopy
-comment1.target=Loan(java.lang.String,\ java.lang.String,\ java.lang.String,\ Copy)
-comment2.params=
-comment2.target=java.lang.String\ getID()
-comment3.params=
-comment3.target=java.lang.String\ getLoanCopyLPArtist()
-numComments=4
+comment1.target=Loan(int,\ java.lang.String,\ java.lang.String,\ Copy)
+numComments=2

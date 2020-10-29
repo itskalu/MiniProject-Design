@@ -1,7 +1,9 @@
 #BlueJ class context
 comment0.target=LendLPCtr
 comment1.params=borrowerName
-comment1.target=model.Borrower\ FindBorrowerByName(java.lang.String)
+comment1.target=model.Borrower\ findBorrowerByName(java.lang.String)
 comment2.params=lpTitle
-comment2.target=model.Copy\ FindLPCopy(java.lang.String)
-numComments=3
+comment2.target=model.Copy\ findLPCopy(java.lang.String)
+comment3.params=id\ returnDate
+comment3.target=model.Loan\ registerLoan(int,\ java.lang.String)
+numComments=4
